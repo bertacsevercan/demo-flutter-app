@@ -4,7 +4,9 @@ import 'dart:convert';
 import 'package:intl/intl.dart';
 
 class Api {
-  List files = [];
+  List<Item> files = [
+    Item(name: "n/a", size: 0, url: "n/a", uploadDate: "n/a")
+  ];
   String url = "http://localhost:5000/items";
 
   Map<String, String> headers = {
